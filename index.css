@@ -1,6 +1,8 @@
 body {
   display: flex;
   flex-direction: column;
+  background: -webkit-linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
+  background: linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
 }
 main {
   max-width: 90%;
