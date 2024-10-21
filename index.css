@@ -1,60 +1,105 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+  min-height: 100vh; /* Asegurarse de ocupar toda la altura de la pantalla */
   background: -webkit-linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
   background: linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
+  margin: 0;
 }
+
 main {
   max-width: 90%;
   margin: auto;
 }
 
 header {
+  width: 100%;
   padding-left: 2ch;
   padding-right: 2ch;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 }
+
 footer {
   color: #ffffff;
   padding: 1ch;
+  text-align: center;
+  width: 100%;
 }
+
 .bg-color {
   background-color: #003d66;
 }
+
 .container {
   max-width: 50ch;
   border-radius: 0.8ch;
   padding: 2ch;
+  margin: auto;
+  background-color: #ffffff; /* Fondo blanco para el cuadro */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
+  position: relative; /* Importante para que los botones se posicionen respecto al contenedor */
 }
 
 .carousel {
   display: flex;
   overflow: hidden;
-  width: 80%;
+  width: 100%; /* Asegura que el carrusel ocupe todo el ancho del contenedor */
   margin: auto;
   position: relative;
 }
+
 .carousel-item {
   min-width: 100%;
   transition: transform 0.5s ease-in-out;
 }
+
 .carousel img {
   width: 100%;
   height: auto;
 }
+
+.info-container {
+  text-align: center; /* Centramos tanto el texto como el botón */
+  margin-top: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+.button-container {
+  margin-top: 1rem; /* Espacio entre el texto y el botón */
+}
+
 .btn {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
   padding: 10px;
   cursor: pointer;
 }
+
 .btn-left {
-  left: 0;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
+
 .btn-right {
-  right: 0;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }

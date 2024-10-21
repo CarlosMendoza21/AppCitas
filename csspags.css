@@ -1,0 +1,10 @@
+body{
+text-align: center;
+background: -webkit-linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
+background: linear-gradient(90deg, #f9d02f, #ffe9ac, #f9d02f);
+}
+
+.textoCont{
+    max-width: 80%;
+    margin: 0 auto;
+}
